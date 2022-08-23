@@ -12,11 +12,13 @@ I will design and make an application that will keep track of the list of studen
 
 ### Why Python?
 Contrast to every other programming language, I have chosen to use Python 3.x for numerous reasons. For starters, Python is the most well known and used programming language throughout the world, compared to the alternatives such as C++ and Javascript [1]. This will not only allow me to have greater access to resources and references but most importantly allow future developers to expand and update the application I have created, making it future proof. 
-
 Personally as the developer, I am the most comfortable with programming in Python, meaning that not only will everything be streamlined and efficient but most importantly, the client will receive the application in a timely manner, without any extensions of the due date. Judging by the benefits of both the programmer and client, it's safe to say that Python is the right programming language to use for this project. 
 
 ### Why KivyMD?
 KivyMD will be used to construct the graphical user interface (GUI) for the user to navigate throughout the app. Other alternatives such as Libavg or PyQT do exist when creating a GUI, however, unlike the other two, KivyMD is compatible with all 3 operating systems (including mobile devices) [2] making it easier for the client to access the application. Additionally, KivyMD’s goal, “to approximate Google's Material Design spec as close as possible without sacrificing ease of use or application performance.” [3] also greatly relates to the client's experience as the GUI is what the client actually sees and a good GUI is always appreciated in every application. KivyMD is also the library I am the most familiar with and will help me as a developer to not only finish on time, but also ensure a delivery to the client on time. For these reasons, I have come to the conclusion that KivyMD is the most appropriate GUI node for my project. 
 
+### Why SQLite?
+SQLite is a database engine written in the C language[4] but comes bundled with any Python interpreter such as pycharm without having to install any additional software [5]. Compared to other database applications, SQLite is cross compatible with a number of programs and operating systems [5] and is relatively simpler, shortening the time to develop a database. These factors will be beneficial to the client as the compatibility will ensure the client can access the database through the app from any platform they wish to use and also can be used to futureproof the application as future developers can modify the database if necessary. 
+As the developer, I am the most familiar with this database structure and console which will allow me to create the database quickly and will ensure that the client's deadline is met. With this flexibility and superiority over other databases, I have decided to use SQLite for this project's database. 
 
 
