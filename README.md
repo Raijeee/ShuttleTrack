@@ -22,3 +22,5 @@ SQLite is a database engine written in the C language[4] but comes bundled with 
 As the developer, I am the most familiar with this database structure and console which will allow me to create the database quickly and will ensure that the client's deadline is met. With this flexibility and superiority over other databases, I have decided to use SQLite for this project's database. 
 
 
+
+![](System_Diagram.jpg) 
