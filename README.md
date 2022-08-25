@@ -21,6 +21,14 @@ KivyMD will be used to construct the graphical user interface (GUI) for the user
 SQLite is a database engine written in the C language[4] but comes bundled with any Python interpreter such as pycharm without having to install any additional software [5]. Compared to other database applications, SQLite is cross compatible with a number of programs and operating systems [5] and is relatively simpler, shortening the time to develop a database. These factors will be beneficial to the client as the compatibility will ensure the client can access the database through the app from any platform they wish to use and also can be used to futureproof the application as future developers can modify the database if necessary. 
 As the developer, I am the most familiar with this database structure and console which will allow me to create the database quickly and will ensure that the client's deadline is met. With this flexibility and superiority over other databases, I have decided to use SQLite for this project's database. 
 
+## Success Criteria
 
+## Client Approval
+
+## Works Cited
+
+
+# Criteria B: Design
+## System Diagram
 
 ![](System_Diagram.jpg) 
