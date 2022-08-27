@@ -24,6 +24,8 @@ As the developer, I am the most familiar with this database structure and consol
 ## Success Criteria
 
 1. The application must have a registration system where the user can register their email, username and password and are saved into a database.
+2. The application must encrypt the users password in the local SQL database.
+3. 
 
 
 ## Client Approval
