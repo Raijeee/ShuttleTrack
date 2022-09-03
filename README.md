@@ -1,6 +1,6 @@
 # Unit IA: Client Project (Club Attendance Application)
 
-# Criteria A: Planning
+# Criteria A: Planning (489 words) 
 ## Problem definition
 The badminton club leaders have to mark attendance every time they practice badminton. Currently, they use google sheets, which turn out to be very hard to use, especially with limited wifi. The badminton club leaders have approached me to create an application that can efficiently record the attendance of the club. They want an application that has a GUI that has accessible buttons and textboxes to record attendance with individual names and must work even without access to the internet. 
 
@@ -26,11 +26,22 @@ Compared to other databases such as Improvado or RDBMS, SQLite is cross compatib
 4. The application must be able to fetch all previously inputted data from the encrypted database and display it via the GUI.
 5. The application must feature a home screen, data input screen, previous data page and login screen. 
 
-
-
 ## Client Approval
 
 ## Works Cited
+
+1. "The 10 Most Popular Programming Languages to Learn in 2021." Northeastern University Graduate Programs, 14 May 2021, www.northeastern.edu/graduate/blog/most-popular-programming-languages/. Accessed 28 Mar. 2022.
+
+2. ResellerClub. "The 6 Best Python GUI Frameworks for Developers." Medium, 18 Oct. 2019, medium.com/teamresellerclub/the-6-best-python-gui-frameworks-for-developers-7a3f1a41ac73. Accessed 28 Mar. 2022.
+
+3. "Kivymd/KivyMD: KivyMD is a Collection of Material Design Compliant Widgets for Use with Kivy, a Framework for Cross-platform, Touch-enabled Graphical Applications. Https://youtube.com/c/KivyMD Https://twitter.com/KivyMD Https://habr.com/ru/users/kivymd Https://stackoverflow.com/tags/kivymd." GitHub, github.com/kivymd/KivyMD. Accessed 28 Mar. 2022.
+
+4. "SQLite Home Page." SQLite, www.sqlite.org/index.html. Accessed 28 Mar. 2022.
+
+5. "How To Use the Sqlite3 Module in Python 3." DigitalOcean – The Developer Cloud, 2 June 2020, www.digitalocean.com/community/tutorials/how-to-use-the-sqlite3-module-in-python-3. Accessed 28 Mar. 2022.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 # Criteria B: Design
