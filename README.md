@@ -20,11 +20,13 @@ Alternatives such as Libavg or PyQT do exist, however, KivyMD is compatible with
 Compared to other databases such as Improvado or RDBMS, SQLite is cross compatible with a number of operating systems [4]. This is beneficial to the client as the compatibility will ensure the client can access it through any platform and also can ensure futureproofing of the application as developers can modify the database if necessary. As the developer, I am the most familiar with this database which will allow me to ensure that the client's deadline is met. With this flexibility and superiority over other alternatives, SQLite will be used for this project.
 
 ### Success Criterias:
-1. The application must have an encrypted registration system where the user can register their email, username and password and be saved into a database.
-2. The application must feature a log in/out system where the user can enter username and password and be checked with the encrypted database to match credentials.
-3. The user must be able to record all names and attendance status for individual students via the GUI and must be encrypted and saved into the database. 
-4. The application must be able to fetch all previously inputted data from the encrypted database and display it via the GUI.
-5. The application must feature a home screen, data input screen, previous data page and login screen. 
+1. The application must have a secure registration / login system where the user can insert their email, username and password and all be stored locally.
+2. The application provides tools to record all names and weekly attendance status for individual students via the GUI and must be stored locally. 
+3. The application must be able to host different user roles: Administrator / Leaders and Students. 
+4. The application provides a tool for the referee to keep track of the points in a game by clicking on the courts whenever there is a point gained. 
+5. The application must be able to export everyones name and attendance data into a PDF format.
+6. The application must be able to display the number of absence/presence per user and is only visible to the admin. 
+
 
 ## Client Approval
 
