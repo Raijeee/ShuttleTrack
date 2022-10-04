@@ -48,3 +48,48 @@ Compared to other databases such as Improvado or RDBMS, SQLite is cross compatib
 ## System Diagram
 
 ![](System_Diagram.jpg) 
+
+### Fig1. System Diagram of the application
+
+The system diagram shows how the application interacts with each other. The input will be done with a keyboard (input of numbers) and the output will be shown on the screen. The application will be on a computer, which will be inside the MacOS operating system. The app will then be operated via Python version 3.x and executed on Pycharm via the file name, Unit3.py and Unit3.kv. These python files are then connected with a SQL database called Unit3.db.
+
+## Wireframe Diagram
+
+### Fig2. Wireframe Diagram of the GUI
+
+This Wireframe Diagram shows the generated outline of the GUI of the application. It shows the functionalities of every button planned out to be used in the application and shows all 5 screens of the application.
+
+## Flow Diagrams
+
+!(flow1)
+### Fig3. What does it do?
+Caption
+
+!(flow2)
+### Fig4. What does it do?
+Caption
+
+!(flow3)
+### Fig5. What does it do?
+Caption
+
+
+## ER Diagram
+!(ERDiagram)
+### Fig6. ER (Entity Relationship) Diagram
+
+## UML Diagram
+
+### Fig7. UML Diagram for Application Database
+
+## Table of data
+
+This is the basic outline of the database for the user inputs.
+This is the basic outline of the database for the sleep inputs.
+
+# Test Plan
+
+## Record of Tasks
+
+# Criteria C:
+
