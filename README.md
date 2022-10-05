@@ -63,6 +63,24 @@ The system diagram shows how the application interacts with each other. The inpu
 
 This Wireframe Diagram shows the generated outline of the GUI of the application. It shows the functionalities of every button planned out to be used in the application and shows all 5 screens of the application.
 
+#### Login Screen
+This will be the screen the user will be presented when first opening the application. The user will have to enter their username and password and click the login screen to go to the main screen or click the register button if not registered. 
+
+#### Main Screen
+The main screen consists of all the buttons "Add Attendance", "History", "Refereererererererererererer *
+
+#### Registration Screen
+
+
+#### Attendance Screen
+
+
+#### Refree Screen
+
+
+#### History Screen 
+
+
 ## Flow Diagrams
 
 !(flow1)
