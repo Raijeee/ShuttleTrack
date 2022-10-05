@@ -58,7 +58,7 @@ The system diagram shows how the application interacts with each other. The inpu
 
 ## Wireframe Diagram
 
-![](wireframe.jpg)
+![](wireframe1.jpg)
 
 ### Fig2. Wireframe Diagram of the GUI
 
@@ -76,14 +76,17 @@ The main screen consists of all the buttons: "Add Attendance", "History", "Refer
 #### Attendance Screen
 The attendance screen has the list of names of the students inputted in the Student Input Screen and the user can record if the student is present or not. This is only accessible to "LEADER" and "ADMIN" roles. 
 
-### Student Input Screen
-The 
+#### Student Input Screen
+This screen is to edit the student list within the badminton club. The screen will be able to add or delete any names that will be displayed for attendance. This is only accessible to "LEADER" and "ADMIN" roles. 
 
 #### Referee Screen
-
+This screen will display a point couter where it will count the points of every side for each click. This is accessible to all roles. 
 
 #### History Screen 
+This screen is to view the past history of each students number of absence and presence. This is only accessible to "LEADER" and "ADMIN" roles. 
 
+#### Admin Screen 
+This screen will be able to change any users roles from "STUDENTS" to "LEADER" or "ADMIN" or vice versa. This is only accessible to "ADMIN" roles. 
 
 ## Flow Diagrams
 
