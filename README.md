@@ -29,6 +29,7 @@ Compared to other databases such as Improvado or RDBMS, SQLite is cross compatib
 
 
 ## Client Approval
+![](clientapproval.png)
 
 ## Works Cited
 
@@ -64,18 +65,21 @@ The system diagram shows how the application interacts with each other. The inpu
 This Wireframe Diagram shows the generated outline of the GUI of the application. It shows the functionalities of every button planned out to be used in the application and shows all 5 screens of the application.
 
 #### Login Screen
-This will be the screen the user will be presented when first opening the application. The user will have to enter their username and password and click the login screen to go to the main screen or click the register button if not registered. 
-
-#### Main Screen
-The main screen consists of all the buttons "Add Attendance", "History", "Refereererererererererererer *
+This will be the screen the user will be presented when first opening the application. The user will have to enter their username and password and click the login screen to go to the main screen or click the register button if not registered. This is accessible to all roles. 
 
 #### Registration Screen
+The registration screen will be the screen where the user can register a username, password and email inorder for them to access the application. This is accessible to all roles. 
 
+#### Main Screen
+The main screen consists of all the buttons: "Add Attendance", "History", "Referee Mode" and "Log Out". These buttons will switch the screens to its labelled screens. This is accessible to all roles. 
 
 #### Attendance Screen
+The attendance screen has the list of names of the students inputted in the Student Input Screen and the user can record if the student is present or not. This is only accessible to "LEADER" and "ADMIN" roles. 
 
+### Student Input Screen
+The 
 
-#### Refree Screen
+#### Referee Screen
 
 
 #### History Screen 
