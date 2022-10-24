@@ -50,7 +50,7 @@ Compared to other databases such as Improvado or RDBMS, SQLite is cross compatib
 # Criteria B: Design
 ## System Diagram
 
-![](system_diagram.png) 
+![](system_dia.png) 
 
 ### Fig1. System Diagram of the application
 
