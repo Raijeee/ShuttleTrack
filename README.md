@@ -54,7 +54,7 @@ Compared to other databases such as Improvado or RDBMS, SQLite is cross compatib
 
 ### Fig1. System Diagram of the application
 
-The system diagram shows how the application interacts with each other. The input will be done with a keyboard (input of numbers) and the output will be shown on the screen. The application will be on a computer, which will be inside the MacOS operating system. The app will then be operated via Python version 3.x and executed on Pycharm via the file name, Unit3.py and Unit3.kv. These python files are then connected with a SQL database called Unit3.db.
+The system diagram shows how the application interacts with each other. The input will be done with a keyboard (input of numbers) and the output will be shown on the screen. The application will be on a computer, which will be inside the MacOS operating system. The app will then be operated via Python version 3.x and executed on Pycharm via the file name, Attendance.py and Attendance.kv. These python files are then connected with a SQL database (version 3.39.4) called Attendance.db.
 
 ## Wireframe Diagram
 
