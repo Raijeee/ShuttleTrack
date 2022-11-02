@@ -90,7 +90,7 @@ This screen will be able to change any users roles from "STUDENTS" to "LEADER" o
 
 ## Flow Diagrams
 
-!(flow1)
+![](flow1.png)
 ### Fig3. What does it do?
 Caption
 
