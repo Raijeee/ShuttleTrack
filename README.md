@@ -98,7 +98,7 @@ Caption
 ### Fig4. What does it do?
 Caption
 
-!(flow3)
+![](flow3.png)
 ### Fig5. What does it do?
 Caption
 
