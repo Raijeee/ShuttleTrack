@@ -94,7 +94,7 @@ This screen will be able to change any users roles from "STUDENTS" to "LEADER" o
 ### Fig3. What does it do?
 Caption
 
-!(flow2)
+![](flow2.png)
 ### Fig4. What does it do?
 Caption
 
