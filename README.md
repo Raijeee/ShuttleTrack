@@ -170,7 +170,7 @@ Test plans are used to show if the application works and meets the clients needs
 
 # Criteria C:
 
-## Techniques Used
+### Techniques Used
 - Nested conditional statements
 - Loops 
 - Functions
@@ -179,8 +179,159 @@ Test plans are used to show if the application works and meets the clients needs
 - Abstraction (KivyMD)
 
 
-## Tools used
+### Tools used
 - Installing Kivy and KivyMD (GUI library)
 
+## Registration / Login function
+
+
+### Database
+To create the backbone of this function, I initially had to generate a database for users to store all information linked to one user. 
+
+```.py
+    def create(self):
+        # This function will create the table for the users if it doesnt exist
+        self.cursor.execute("""
+                CREATE TABLE if not exists Users(
+                id INTEGER primary key,
+                username VARCHAR(200) not null unique,
+                email VARCHAR(255) not null unique,
+                password VARCHAR(256) not null,
+                first_name VARCHAR(200) not null,
+                last_name VARCHAR(200) not null,
+                role VARCHAR(200) not null,
+                );
+                """)
+        self.connection.commit()
+```
+
+This figure shows that each column corresponds to its respective data type and its individual requirements. Some elements are created automatically, such as “id” but other fields such as username, email and password require the user to input themselves and will act as unique identifiers for attendance taking. I first had trouble connecting the database with the python file but by following the SQLite documentation [1] I was able to eventually connect the files. 
+
+### Graphical User Interface
+
+In order for users to access this function, I will then have to create the frontend or the GUI for text fields users could enter:
+
+```.py
+<LoginScreen>
+    FitImage:
+        source: "background_img.jpg"
+
+    MDCard:
+        border_radius: 20
+        radius: [15]
+        size_hint: 0.5, 0.8
+        elevation: 10
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
+        orientation: "vertical"
+        md_bg_color:[1,1,1, 0.4]
+
+    MDLabel:
+        text: "Login"
+        font_style: 'H2'
+        halign: 'center'
+        pos_hint:{"center_x":0.5, "center_y":0.8}
+
+    MDLabel:
+        id: login_label
+        text: "Please enter Username and Password"
+        font_style: 'H6'
+        halign: 'center'
+        size_hint: 0.4,0.07
+        pos_hint:{"center_x":0.5, "center_y":0.65}
+
+    MDLabel:
+        id: login_label
+        text: ""
+        theme_text_color: "Custom"
+        text_color: 1, 0, 0, 1
+        font_style: 'Caption'
+        halign: 'center'
+        pos_hint:{"center_x":0.5, "center_y":0.55}
+
+    MDTextFieldRound:
+        id: username
+        pos_hint:{"center_x":0.5, "center_y":0.5}
+        size_hint: 0.4,0.07
+        icon_left: 'account-circle'
+        hint_text: 'Username'
+    MDTextFieldRound:
+        id: password
+        pos_hint:{"center_x":0.5, "center_y":0.4}
+        size_hint: 0.4,0.07
+        icon_left: 'key-variant'
+        hint_text: 'Password'
+        password: True
+
+    MDRaisedButton:
+        text: "Log in"
+        pos_hint: {"center_x":0.5,"center_y":0.3}
+        md_bg_color:app.theme_cls.primary_dark
+        width:root.width*0.4
+        size_hint: 0.25,0.075
+        on_release:
+            root.try_login()
+    MDLabel:
+        text: "Not registered yet?"
+        font_style:'Subtitle1'
+        halign: 'center'
+        pos_hint:{"center_x":0.5, "center_y":0.22}
+    MDRaisedButton:
+        text: "Register"
+        pos_hint: {"center_x":0.5,"center_y":0.17}
+        md_bg_color:app.theme_cls.primary_light
+        width:root.width*0.4
+        size_hint: 0.25,0.05
+        on_release:
+            root.parent.current = "RegisterScreen"
+```
+
+This figure shows the general layout used to create a graphical interface for the user. It uses the <ScreenManager> to create a <LoginScreen> and through the use of the KivyMD library, I was able to use provided resources such as MDcards and MDlables to create editable boxes and text fields to gain input from the user interface. Connecting the user inputted text to a readable string on python proved to be a challenge although a quick research and help from a youtube tutorial [2] helped me tremendously. 
+
+### Encryption 
+
+To ensure security, an encryption method was necessary. Rather than just leaving the passwords as it is, it was necessary for it to be saved fully encrypted. 
+
+```.py
+# This is the configuration of the hashing functions
+pwd_context = CryptContext(
+    schemes=["pbkdf2_sha256"],
+    default = 'pbkdf2_sha256',
+    pbkdf2_sha256__default_rounds=3000
+)
+# This function hashes the password
+def encrypt_password(password):
+    return pwd_context.hash(password)
+```
+![](IOWJFIOWJF)
+
+Using the passlib encryption library, I will be able to hash the passwords entered by the user. The figure shows the code and what I as the developer sees in the SQL database, meaning that they won’t be able to see the password of the user. 
+
+### Matching Credentials and Decrypting
+
+For the log in system to actually function, I will have to be able to code a bridge between the inputted variables from the GUI and verify it with the database. 
+
+```.py
+      def query_user(self,username):
+        # This function will match the credientials of the input with the database Username
+        self.username=username
+        result = self.cursor.execute(f"select * from USERS where username='{username}';")
+        return result.fetchone()
+```
+
+I first created a function where the inputted string on the GUI connects with the python code and compares it with the existing database inorder to give out a boolean value. This uses the sqlite3 tools inorder to query the existence of the inputted users.
+
+```.py
+    def query_password(self,password):
+        # This function will match the credientials of the input with the database Password
+        self.password=password
+        result = self.cursor.execute(f"select * from USERS where password='{password}';")
+        return result.fetchone()
+```
+```.py
+def verify_password(password, hashed):
+    return pwd_context.verify(password, hashed)
+```
+  
+Similar to the top function, I coded this to verify the password inputted actually matches with the decrypted password in the database. In order to do this, I had to decrypt the password that was in the database, which proved to be a challenge. However, through numerous trial and errors and consulting the SQL documentations [1] I was able to decrypt the password. 
 
 
