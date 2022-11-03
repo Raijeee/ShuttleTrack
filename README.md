@@ -113,15 +113,12 @@ The entity-relationship diagram shows the interaction between entity sets, store
 
 ## Normalized Table
 
-\begin{table}[]
-\begin{tabular}{lllllll}
-id (primary key) & Username & Password (Encrypted)                                                                   & Email                     & First Name & Last Name & Role   \\
-1                & rei2022  & $pbkdf2-sha256$3000$/58TQui919pbq5VyzjnHGA$.vAtZD5XUGo/ycoGnUBnAu22fVpl/dH6MqvxxKs4BPM & rei2022\_test@gmail.com   & Rei        & Nishi     & Admin  \\
-2                & alex332  & $pbkdf2-sha256$3000$NGas9f5fC0HIWcv5/5/Tug$zWWc.J8KZvQgHgRFLiOgxJH/1EPP2cb9PhTIu4XGg2Q & alex332\_test@gmail.com   & Alex       & Soh       & Leader \\
-3                & rub493   & $pbkdf2-sha256$3000$P2cM4fxfKwWAECKk9F6rtQ$YjCPri1UwCa173W6LuQj9TgAVPds8zGl3oHLViuK.Cg & rub493\_test@yahoo.co.jp  & Rub        & Pinz      & Member \\
-4                & user123  & $pbkdf2-sha256$3000$GwNg7H1vLcU4J8R4zxkDYA$vohr75tXcNl4OMlpngH6gjq6IGx8Pua7O3TtTMqhUsE & user123\_test@hotmail.com & User       & Name      & Member
-\end{tabular}
-\end{table}
+| id (primary key)  | Username | Password (Encrypted)                                                                   | Email                    | First Name | Last Name | Role   |
+|-------------------|----------|----------------------------------------------------------------------------------------|--------------------------|------------|-----------|--------|
+| 1                 | rei2022  | $pbkdf2-sha256$3000$/58TQui919pbq5VyzjnHGA$.vAtZD5XUGo/ycoGnUBnAu22fVpl/dH6MqvxxKs4BPM | rei2022_test@gmail.com   | Rei        | Nishi     | Admin  |
+| 2                 | alex332  | $pbkdf2-sha256$3000$NGas9f5fC0HIWcv5/5/Tug$zWWc.J8KZvQgHgRFLiOgxJH/1EPP2cb9PhTIu4XGg2Q | alex332_test@gmail.com   | Alex       | Soh       | Leader |
+| 3                 | rub493   | $pbkdf2-sha256$3000$P2cM4fxfKwWAECKk9F6rtQ$YjCPri1UwCa173W6LuQj9TgAVPds8zGl3oHLViuK.Cg | rub493_test@yahoo.co.jp  | Rub        | Pinz      | Member |
+| 4                 | user123  | $pbkdf2-sha256$3000$GwNg7H1vLcU4J8R4zxkDYA$vohr75tXcNl4OMlpngH6gjq6IGx8Pua7O3TtTMqhUsE | user123_test@hotmail.com | User       | Name      | Member |
 ### This is the basic outline of the database for the user inputs.
 
 
