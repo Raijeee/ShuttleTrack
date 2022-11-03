@@ -92,7 +92,7 @@ This screen will be able to change any users roles from "STUDENTS" to "LEADER" o
 
 ![](flowd1.png)
 ### Fig3. What does it do?
-Caption
+This is the login function where when a user clicks the "login" button in the GUI it will call this function. The username and password variables are defined in its respective text fields in the GUI. The database (attendance.db) is also defined as db. The user_id produces a true or false which relate to the if statement where when false, displays a message called "Error: User not found" and when true moves on to the next if statement which verifies the password. The next if statement will compare the inputted passwords with the respective username inputted and if true changes the screen to the "MainScreen" and when false displays a message that says "Error: Wrong Password". 
 
 ![](flowd2.png)
 ### Fig4. What does it do?
