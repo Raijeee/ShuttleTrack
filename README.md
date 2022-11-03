@@ -123,10 +123,10 @@ The entity-relationship diagram shows the interaction between entity sets, store
 | 4                 | user123  | $pbkdf2-sha256$3000$GwNg7H1vLcU4J8R4zxkDYA$vohr75tXcNl4OMlpngH6gjq6IGx8Pua7O3TtTMqhUsE | user123_test@hotmail.com | User       | Name      | Member |
 ### This is the normalized table of the user database. 
 
-| Date        | First Name | Email                    | Present | Absent | Percentage (%) |
+| Last Date        | First Name | Email       | Present | Absent | Present Percentage (%) |
 |-------------|------------|--------------------------|---------|--------|----------------|
 | oct.10.2022 | Rei        | rei2022_test@gmail.com   | 6       | 1      | 86             |
-| oct.27.2022 | Alex       | alex332_test@gmail.com   | 5       | 2      | 71             |
+| oct.10.2022 | Alex       | alex332_test@gmail.com   | 5       | 2      | 71             |
 | nov.1.2022  | Rub        | rub493_test@yahoo.co.jp  | 7       | 0      | 100            |
 | nov.4.2022  | User       | user123_test@hotmail.com | 4       | 3      | 57             |
 ### This is the normalized table of the attendance data. 
