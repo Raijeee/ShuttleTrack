@@ -112,6 +112,8 @@ The entity-relationship diagram shows the interaction between entity sets, store
 ### Fig7. UML Diagram for Application Database
 
 ## Normalized Table
+### Normalized tables are used to process and organize data in a database table. This includes creating tables and establishing relationships by eliminating redundacy and inconsistent dependency.
+
 
 | id (primary key)  | Username | Password (Encrypted)                                                                   | Email                    | First Name | Last Name | Role   |
 |-------------------|----------|----------------------------------------------------------------------------------------|--------------------------|------------|-----------|--------|
