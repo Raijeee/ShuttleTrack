@@ -132,6 +132,13 @@ The entity-relationship diagram shows the interaction between entity sets, store
 ### This is the normalized table of the attendance data. 
 
 # Test Plan
+Test plans are used to show if the application works and meets the clients needs with the success criteria. The table includes title, input, expected output and a description of the test. All of these will have to satisfy a success criteria or a testing type. The testing types are listed as follows:
+
+Unit Testing - Testing a piece of code that can be logically isolated in codes. Specifcally functions or classes.
+Code Review - Reviewing the raw code to see if there are any errors / good coding practices
+Intergration Testing - Ensuring all graphical interfaces function and intertwine with one and another
+System Review - Making sure all success criterias are met
+Acceptance Check - Handing over to client for them to test
 
 | Instruction                                    | Category           | Input                                                                                                                                 | Expected Output                                                                                                   | Description                                                                                                 | Success Criteria |
 |------------------------------------------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|------------------|
