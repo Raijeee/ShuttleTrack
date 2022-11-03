@@ -106,7 +106,7 @@ This is a function that is active when the user clicks the referee mode. The lef
 ## ER Diagram
 ![](ER_Diagram.png)
 ### Fig6. ER (Entity Relationship) Diagram
-
+The entity-relationship diagram shows the interaction between entity sets, stored in the database table with its respective attribute. In this diagram, yellow rectangles represent the entity that contains attributes. Red circles are the primary key, which are used to uniquely identify each record in the database. 
 ## UML Diagram
 
 ### Fig7. UML Diagram for Application Database
