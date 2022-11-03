@@ -100,7 +100,7 @@ This is a function where the program fetches data from the table database "Atten
 
 ![](flowd3.png)
 ### Fig5. What does it do?
-Caption
+This is a function that is active when the user clicks the referee mode. The left point and right point variables are set to 0 at first to reset the counter if there were past games going on. The variable playing is set to True for the while loop to loop its self while the gams is still in progress. The first if statement is when the left box is clicked, the counter of the left point will increase by one. The same goes for the next if statement just when the right one is clicked.  After the if statements, all variables set to each side will be displayed onto the GUI through changing the label on kivyMD.
 
 
 ## ER Diagram
