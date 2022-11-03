@@ -285,7 +285,7 @@ In order for users to access this function, I will then have to create the front
             root.parent.current = "RegisterScreen"
 ```
 
-This figure shows the general layout used to create a graphical interface for the user. It uses the <ScreenManager> to create a <LoginScreen> and through the use of the KivyMD library, I was able to use provided resources such as MDcards and MDlables to create editable boxes and text fields to gain input from the user interface. Connecting the user inputted text to a readable string on python proved to be a challenge although a quick research and help from a youtube tutorial [2] helped me tremendously. 
+This figure shows the general layout used to create a graphical interface for the user. It uses the <ScreenManager> to create a <LoginScreen> and through the use of the KivyMD library, I was able to use provided resources such as MDCard and MDLabel to create editable boxes and text fields to gain input from the user interface. Connecting the user inputted text to a readable string on python proved to be a challenge although a quick research and help from a youtube tutorial [2] helped me tremendously. 
 
 ### Encryption 
 
