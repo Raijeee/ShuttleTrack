@@ -104,7 +104,7 @@ Caption
 
 
 ## ER Diagram
-!(ERDiagram)
+![](ER_Diagram.png)
 ### Fig6. ER (Entity Relationship) Diagram
 
 ## UML Diagram
