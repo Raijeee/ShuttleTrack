@@ -119,10 +119,15 @@ The entity-relationship diagram shows the interaction between entity sets, store
 | 2                 | alex332  | $pbkdf2-sha256$3000$NGas9f5fC0HIWcv5/5/Tug$zWWc.J8KZvQgHgRFLiOgxJH/1EPP2cb9PhTIu4XGg2Q | alex332_test@gmail.com   | Alex       | Soh       | Leader |
 | 3                 | rub493   | $pbkdf2-sha256$3000$P2cM4fxfKwWAECKk9F6rtQ$YjCPri1UwCa173W6LuQj9TgAVPds8zGl3oHLViuK.Cg | rub493_test@yahoo.co.jp  | Rub        | Pinz      | Member |
 | 4                 | user123  | $pbkdf2-sha256$3000$GwNg7H1vLcU4J8R4zxkDYA$vohr75tXcNl4OMlpngH6gjq6IGx8Pua7O3TtTMqhUsE | user123_test@hotmail.com | User       | Name      | Member |
-### This is the basic outline of the database for the user inputs.
+### This is the normalized table of the user database. 
 
-
-This is the basic outline of the database for the sleep inputs.
+| Date        | First Name | Email                    | Present | Absent | Percentage (%) |
+|-------------|------------|--------------------------|---------|--------|----------------|
+| oct.10.2022 | Rei        | rei2022_test@gmail.com   | 6       | 1      | 86             |
+| oct.27.2022 | Alex       | alex332_test@gmail.com   | 5       | 2      | 71             |
+| nov.1.2022  | Rub        | rub493_test@yahoo.co.jp  | 7       | 0      | 100            |
+| nov.4.2022  | User       | user123_test@hotmail.com | 4       | 3      | 57             |
+### This is the normalized table of the attendance data. 
 
 # Test Plan
 
