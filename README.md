@@ -199,7 +199,7 @@ Test plans are used to show if the application works and meets the client's need
 | 23      | Create a test plan                                                  | A clear test plan to ensure the functionality of the application              | 1 day         | November 2nd           | B         |
 | 24      | Document Techniques used                                            | A clear list of techniques used in this development phase                     | 1 day         | November 2nd           | C         |
 | 25      | Document tools used                                                 | A clear list of tools used in this development phase                          | 1 day         | November 3rd           | C         |
-| 26      |                                                                     | A good amount of criteria C done, with challenges faced and how I overcame it | 1 day         | November 4th           | C         |
+| 26      | Write up criteria C                                                            | A good amount of criteria C done, with challenges faced and how I overcame it | 1 day         | November 4th           | C         |
 |         |                                                                     |                                                                               |               |                        |           |
 |         |                                                                     |                                                                               |               |                        |           |
 
