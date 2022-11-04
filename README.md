@@ -302,7 +302,7 @@ pwd_context = CryptContext(
 def encrypt_password(password):
     return pwd_context.hash(password)
 ```
-![](IOWJFIOWJF)
+![](C1.png)
 
 Using the passlib encryption library, I will be able to hash the passwords entered by the user. The figure shows the code and what I as the developer sees in the SQL database, meaning that they won’t be able to see the password of the user. 
 
