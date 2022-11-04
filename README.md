@@ -334,4 +334,7 @@ def verify_password(password, hashed):
   
 Similar to the top function, I coded this to verify the password inputted actually matches with the decrypted password in the database. In order to do this, I had to decrypt the password that was in the database, which proved to be a challenge. However, through numerous trial and errors and consulting the SQL documentations [1] I was able to decrypt the password. 
 
-
+## Source Cited:
+    
+[1] "SQLite Documentation." SQLite, Hwaci - Applied Software Research, 16 Jan. 2021, www.sqlite.org/docs.html. Accessed 2 Nov. 2022.
+[2] "KivyMD 1.2.0.dev0 Documentation." KivyMD 1.1.1 Documentation, 2022, kivymd.readthedocs.io/en/latest/. Accessed 2 Nov. 2022.
