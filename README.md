@@ -202,7 +202,7 @@ Test plans are used to show if the application works and meets the clients needs
 |         |                                                                     |                                                                               |               |                        |           |
 |         |                                                                     |                                                                               |               |                        |           |
 
-# Criteria C:
+# Criteria C: Coding
 
 ### Techniques Used
 - Nested conditional statements
