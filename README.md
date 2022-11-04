@@ -100,7 +100,7 @@ This is the login function when a user clicks the "login" button in the GUI it w
 ### Fig4. What does it do?
 This is a function where the program fetches data from the table database "Attendance.db" The fetched data will go through an if statement, evaluating whether the data is valid, specifically if all fields are met. If so, the data will be appended to the database and if not, the code will output nothing. 
 
-![](flowd3.png)
+![](Flow3.drawio.png)
 ### Fig5. What does it do?
 This is a function that is active when the user clicks the referee mode. The left point and right point variables are set to 0 at first to reset the counter if past games were going on. The variable playing is set to True for the while loop to loop itself while the games are still in progress. The first if statement is when the left box is clicked, the counter of the left point will increase by one. The same goes for the next if statement just when the right one is clicked.  After the if statements, all variables set to each side will be displayed on the GUI by changing the label on kivyMD.
 
