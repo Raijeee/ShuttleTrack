@@ -171,6 +171,37 @@ Test plans are used to show if the application works and meets the clients needs
 
 ## Record of Tasks
 
+| Task NO | Planned Action                                                      | Planned Outcome                                                               | Time estimate | Target completion date | Criterion |
+|---------|---------------------------------------------------------------------|-------------------------------------------------------------------------------|---------------|------------------------|-----------|
+| 1       | Interview client and record                                         | A record of the interview (email)                                             | 1 day         | August 20th            | A         |
+| 2       | Writing the Problem Definition in the repository                    | A clear problem definition in Github                                          | 1 day         | August 21st            | A         |
+| 3       | Writing the design statement in the repository                      | A clear design statement that suits the need of the client                    | 2 days        | August 23rd            | A         |
+| 4       | Writing all the justification for programs and methods used         | A clear justification that suits the client and myself                        | 2 days        | August 25th            | A         |
+| 5       | Writing all 6 success criterias                                     | A clear success criteria that suits the client                                | 1 day         | August 26th            | A         |
+| 6       | Cite all work used in Criteria A                                    | MLA format citing at the bottom of Criteria A                                 | 1 day         | August 27th            | A         |
+| 7       | Create system diagram of application                                | A clear and creative system diagram of the app                                | 1 day         | August 28th            | B         |
+| 8       | Explain the system diagram                                          | A brief explanation about the system diagram                                  | 1 day         | August 29th            | B         |
+| 9       | Draw wireframe diagram of GUI                                       | A clear and creative wireframe diagram of the GUI                             | 2 days        | August 31st            | B         |
+| 10      | Explain the wireframe diagram                                       | A brief explanation about the wireframe                                       | 1 day         | September 1st          | B         |
+| 11      | Get familiar with SQLite                                            | Acquired basic skills and functionality of the utilization of SQL             | 4 days        | October 15th           | C         |
+| 12      | Get familiar with the new version of KivyMD (Ver. 1.1.1)            | Acquired skills necessary to create a GUI for the application                 | 3 days        | October 18th           | C         |
+| 13      | Code and create a working log in screen of the app                  | A working log in screen with python or kivyMD with a GUI                      | 1 day         | October 20th           | C         |
+| 14      | Code and create a working registration screen of the app            | A working registration screen with python or kivyMD with a GUI                | 2 days        | October 22nd           | C         |
+| 15      | Draw 3 flow diagrams of 3 functions or classes from the application | A clear diagram of all 3 flow diagrams                                        | 1 day         | October 23rd           | B         |
+| 16      | Explain all flow diagrams                                           | A brief explanation about all 3 flow diagrams                                 | 1 day         | October 25th           | B         |
+| 17      | Code and create a working menu screen of the app                    | A working menu screen with python or kivyMD with a GUI                        | 3 days        | October 28th           | C         |
+| 18      | Ensure all databases are correct and connected with the application | A working and connected SQL database                                          | 1 day         | October 29th           | C         |
+| 19      | Draw an ER diagram of the application                               | A clear ER diagram of the application                                         | 1 day         | October 30th           | B         |
+| 20      | Explain the ER diagram                                              | A brief explanation about the ER diagram                                      | 1 day         | October 31st           | B         |
+| 21      | Draw the table of data of both databases                            | A table of the data represented in both databases                             | 1 day         | November 1st           | B         |
+| 22      | Explain both table of datas                                         | A brief explanation about both table of datas                                 | 1 day         | November 2nd           | B         |
+| 23      | Create a test plan                                                  | A clear test plan to ensure the functionality of the application              | 1 day         | November 2nd           | B         |
+| 24      | Document Techniques used                                            | A clear list of techniques used in this development phase                     | 1 day         | November 2nd           | C         |
+| 25      | Document tools used                                                 | A clear list of tools used in this development phase                          | 1 day         | November 3rd           | C         |
+| 26      |                                                                     | A good amount of criteria C done, with challenges faced and how I overcame it | 1 day         | November 4th           | C         |
+|         |                                                                     |                                                                               |               |                        |           |
+|         |                                                                     |                                                                               |               |                        |           |
+
 # Criteria C:
 
 ### Techniques Used
