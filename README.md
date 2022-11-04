@@ -90,6 +90,8 @@ This screen will be able to change any users roles from "STUDENTS" to "LEADER" o
 
 ## Flow Diagrams
 
+Flowcharts are used to bridge the developer with the user through visualizing complex code inorder for the client to understand the backend of the application. This will help myself as the developer to detect any potential bottlenecks that may exist and also help the client as they will be able to follow step by step visualized instructions to solve any doubts. 
+
 ![](flowd1.png)
 ### Fig3. What does it do?
 This is the login function when a user clicks the "login" button in the GUI it will call this function. The username and password variables are defined in its respective text fields in the GUI. The database (attendance.db) is also defined as db. The user_id produces a true or false which relate to the if statement where when false, displays a message called "Error: User not found" and when true moves on to the next if statement which verifies the password. The next if statement will compare the inputted passwords with the respective username inputted and if true changes the screen to the "MainScreen" and when false displays a message that says "Error: Wrong Password". 
