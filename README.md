@@ -323,7 +323,7 @@ This figure shows the general layout used to create a graphical interface for th
 
 ### Encryption 
 
-To ensure security, an encryption method was necessary. Rather than just leaving the passwords as it is, it needed to be saved fully encrypted. 
+To ensure security, an encryption method was necessary. Rather than just leaving the passwords as it is, it needed to be saved fully encrypted. A hashing system will be necessary in this case. 
 
 ```.py
 # This is the configuration of the hashing functions
@@ -352,7 +352,7 @@ For the login system to function, I will have to be able to code a bridge betwee
         return result.fetchone()
 ```
 
-I first created a function where the inputted string on the GUI connects with the python code and compares it with the existing database in order to give out a boolean value. This uses the sqlite3 tools in order to query the existence of the inputted users.
+I first created a function where the inputted string on the GUI connects with the python code and compares it with the existing database in order to give out a boolean value. This uses the sqlite3 tools in order to query the existence of the inputted users and the database will be able to give out a boolean statement for the python code to utilize. 
 
 ```.py
     def query_password(self,password):
