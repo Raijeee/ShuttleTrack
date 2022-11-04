@@ -96,11 +96,11 @@ Flowcharts are used to bridge the developer with the user by visualizing complex
 ### Fig3. What does it do?
 This is the login function when a user clicks the "login" button in the GUI it will call this function. The username and password variables are defined in their respective text fields in the GUI. The database (attendance.db) is also defined as db. The user_id produces a true or false which relates to the if statement where when false, displays a message called "Error: User not found" and when true moves on to the next if statement which verifies the password. The next if statement will compare the inputted passwords with the respective username inputted and if true changes the screen to the "MainScreen" and when false displays a message that says "Error: Wrong Password". 
 
-![](flowd2.png)
+![](Flow3.drawio.png)
 ### Fig4. What does it do?
 This is a function where the program fetches data from the table database "Attendance.db" The fetched data will go through an if statement, evaluating whether the data is valid, specifically if all fields are met. If so, the data will be appended to the database and if not, the code will output nothing. 
 
-![](Flow3.drawio.png)
+![](flowd3.png)
 ### Fig5. What does it do?
 This is a function that is active when the user clicks the referee mode. The left point and right point variables are set to 0 at first to reset the counter if past games were going on. The variable playing is set to True for the while loop to loop itself while the games are still in progress. The first if statement is when the left box is clicked, the counter of the left point will increase by one. The same goes for the next if statement just when the right one is clicked.  After the if statements, all variables set to each side will be displayed on the GUI by changing the label on kivyMD.
 
