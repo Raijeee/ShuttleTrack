@@ -240,7 +240,7 @@ To create the backbone of this function, I initially had to generate a database 
                 """)
         self.connection.commit()
 ```
-Fig. 9: Database creation code
+### Fig. 9: Database creation code
 Figure 9 shows that each column corresponds to its respective data type and its requirements. Some elements are created automatically, such as “id” but other fields such as username, email and password require the user to input themselves and will act as unique identifiers for attendance taking. I first had trouble connecting the database with the python file but by following the SQLite documentation [1] I was able to eventually connect the files. 
 
 ### Graphical User Interface
@@ -320,7 +320,7 @@ For users to access this function, I will then have to create the frontend or th
         on_release:
             root.parent.current = "RegisterScreen"
 ```
-Fig. 10: Kivy Code for GUI
+### Fig. 10: Kivy Code for GUI
 This figure shows the general layout used to create a graphical interface for the user. It uses the <ScreenManager> to create a <LoginScreen> and through the use of the KivyMD library, I was able to use provided resources such as MDCard and MDLabel to create editable boxes and text fields to gain input from the user interface. Connecting the user-inputted text to a readable string on python proved to be a challenge although quick research and help from a youtube tutorial [2] helped me tremendously. 
 
 ### Encryption 
@@ -338,9 +338,9 @@ pwd_context = CryptContext(
 def encrypt_password(password):
     return pwd_context.hash(password)
 ```
-Fig. 11: Hashing system code
+### Fig. 11: Hashing system code
 ![](C1.png)
-Figure 12: Normalized table of the SQL database
+### Fig. 12: Normalized table of the SQL database
 
 Using the passlib encryption library, I will be able to hash the passwords entered by the user. The figure shows the code and what I as the developer sees in the SQL database, meaning that they won’t be able to see the password of the user. 
 
@@ -355,7 +355,7 @@ For the login system to function, I will have to be able to code a bridge betwee
         result = self.cursor.execute(f"select * from USERS where username='{username}';")
         return result.fetchone()
 ```
-Fig. 12: Code that query’s users in the database
+### Fig. 13: Code that query’s users in the database
 I first created a function where the inputted string on the GUI connects with the python code and compares it with the existing database in order to give out a boolean value. This uses the sqlite3 tools in order to query the existence of the inputted users and the database will be able to give out a boolean statement for the python code to utilize. 
 
 ```.py
@@ -365,12 +365,12 @@ I first created a function where the inputted string on the GUI connects with th
         result = self.cursor.execute(f"select * from USERS where password='{password}';")
         return result.fetchone()
 ```
-Fig. 13: Code that query's passwords in the database
+### Fig. 14: Code that query's passwords in the database
 ```.py
 def verify_password(password, hashed):
     return pwd_context.verify(password, hashed)
 ```
-Fig. 14: Code that decrypts the hashed password in the database
+### Fig. 15: Code that decrypts the hashed password in the database
 Similar to the top function, I coded this to verify the password inputted matches the decrypted password in the database. To do this, I had to decrypt the password that was in the database, which proved to be a challenge. However, through numerous trials and errors and consulting the SQL documentation [1] I was able to decrypt the password. 
 
 ## Source Cited:
