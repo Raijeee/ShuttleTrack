@@ -207,6 +207,7 @@ Test plans are used to show if the application works and meets the client's need
 ### Techniques Used
 - Nested conditional statements
 - Loops 
+- Abstracted Data Type
 - Functions
 - Inheritances (OOP) and Classes
 - Database Management (SQLite3)
