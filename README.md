@@ -92,7 +92,7 @@ This screen will be able to change any user's role from "STUDENTS" to "LEADER" o
 
 Flowcharts are used to bridge the developer with the user by visualizing complex code for the client to understand the backend of the application. This will help me as the developer to detect any potential bottlenecks that may exist and also help the client as they will be able to follow step-by-step visualized instructions to solve any doubts. 
 
-![](flowd1.png)
+![](saveme.png)
 ### Fig4. Authentication system flow diagram
 Figure 4 shows the login function when a user clicks the "login" button in the GUI it will call this function. The username and password variables are defined in their respective text fields in the GUI. The database (attendance.db) is also defined as db. The user_id produces a true or false which relates to the if statement where when false, displays a message called "Error: User not found" and when true moves on to the next if statement which verifies the password. The next if statement will compare the inputted passwords with the respective username inputted and if true changes the screen to the "MainScreen" and when false displays a message that says "Error: Wrong Password". 
 
