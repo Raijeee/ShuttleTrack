@@ -103,7 +103,7 @@ Figure 6 is a function that is active when the user clicks the referee mode. The
 
 
 ## ER Diagram
-![](ERDiagram.png)
+![](er_dia.jpg)
 ### Fig7. ER (Entity Relationship) Diagram
 Figure 7 shows the entity-relationship diagram which shows the interaction between entity sets, stored in the database table with their respective attribute. In this diagram, yellow rectangles represent the entity that contains attributes. Red circles are the primary key, which is used to uniquely identify each record in the database. In this case, there are two entities, one being the user and the other being attendance. These two all intertwine with one another as each user has their attendance status. Each user also has their own attributes such as username, password and email with attendance also having unique attributes such as the number of presences, absence and the percentage of presence. Having a simple two-entity relationship is the best in this case as it is the most efficient and at the same time meets the client's requirements. 
 
