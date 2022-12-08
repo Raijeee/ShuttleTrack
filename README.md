@@ -51,7 +51,7 @@ Figure 1: Client approval of all success criterias
 
 ### Fig2. System Diagram of the application
 
-Figure 2 shows how the application interacts with each other. The input will be done with a keyboard (input of numbers) and the output will be shown on the screen. The application will be on a computer, which will be inside the macOS operating system (ver. Monterey 12.5.1). The app will then be operated via Python version 3.x and executed via the file name, Attendance.py. The Attendnace.py file is then connected with a GUI construction file, Attendance.kv. Furthermore, the python file is then connected with a SQL database (version 3.39.4) called Attendance.db.
+Figure 2 shows how the application interacts with each other. The input will be done with a keyboard (input of numbers) and the output will be shown on the screen. The application will be inside the macOS operating system (ver. Monterey 12.5.1), which will be in the computer itself. The app will then be operated via Python version 3.x and executed via the file name, Attendance.py. The Attendnace.py file is then connected with a GUI construction file, Attendance.kv. Furthermore, the python file is then connected with a SQL database (version 3.39.4) called Attendance.db.
 
 ## Wireframe Diagram
 
