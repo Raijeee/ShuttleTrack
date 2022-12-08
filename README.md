@@ -124,12 +124,12 @@ Figure 8 shows a UML diagram that illustrates the relationship between all the c
 | 4                 | user123  | $pbkdf2-sha256$3000$GwNg7H1vLcU4J8R4zxkDYA$vohr75tXcNl4OMlpngH6gjq6IGx8Pua7O3TtTMqhUsE | user123_test@hotmail.com | User       | Name      | Member |
 ### This is the normalized table of the user database. 
 
-| Last Date        | First Name | Email       | Present | Absent | Present Percentage (%) |
-|-------------|------------|--------------------------|---------|--------|----------------|
-| oct.10.2022 | Rei        | rei2022_test@gmail.com   | 6       | 1      | 86             |
-| oct.10.2022 | Alex       | alex332_test@gmail.com   | 5       | 2      | 71             |
-| nov.1.2022  | Rub        | rub493_test@yahoo.co.jp  | 7       | 0      | 100            |
-| nov.4.2022  | User       | user123_test@hotmail.com | 4       | 3      | 57             |
+| id (primary key) | User_id | Last Date   | Present | Absent | Present Percentage (%) |
+|------------------|---------|-------------|---------|--------|------------------------|
+| 1                | 1       | oct.10.2022 | 6       | 1      | 86                     |
+| 2                | 5       | oct.10.2022 | 5       | 2      | 71                     |
+| 3                | 2       | nov.1.2022  | 7       | 0      | 100                    |
+| 4                | 9       | nov.4.2022  | 4       | 3      | 57                     |
 ### This is the normalized table of the attendance data. 
 
 # Test Plan
