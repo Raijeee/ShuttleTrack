@@ -1,23 +1,22 @@
 # Unit IA: Client Project (Club Attendance Application)
 
-# Criteria A: Planning (489 words) 
+# Criteria A: Planning (480 words) 
 ## Problem definition
-The badminton club leaders have to mark attendance every time they practice badminton. Currently, they use google sheets, which turns out to be very hard to use, especially with limited wifi. The badminton club leaders have approached me to create an application that can efficiently record the attendance of the club. They want an application that has a GUI that has accessible buttons and text boxes to record attendance with individual names and must work even without access to the internet. 
+The badminton club leaders have to mark attendance and keep track of points every time they practice badminton. They use google sheets in a gym with limited wifi, making it impossible to access. The badminton club leaders have approached me to create an application that can record the attendance of the club and keep track of the points of a game. They want an application that has a GUI that has accessible buttons and text boxes with individual names to record attendance and keep track of points. This must work even without access to the internet. 
 
 ## Proposed Solution:
 
 ### Design Statement
-I will design and make an application that will keep track of the student’s attendance for the badminton club leaders. The application will be able to keep track of all data through the use of a database and a login system. To ensure security and privacy, the login system will have a hashing system and will all be saved in a local database using SQLite. The application will feature a GUI so my client can easily utilize the app. This all will be created using Python 3.x with the help of KivyMD for GUI construction. All code will be created and developed on the application, Pycharm. This app will take 4 weeks to complete and will be evaluated according to the criteria.
+I will design and make an application that will keep track of the member's attendance and serve as a point counter for the badminton club leaders. The application will feature a GUI so that my client can easily utilize the app. This all will be created using Python with the help of KivyMD for GUI construction. This application will take 6 weeks to complete and will be evaluated according to the criteria.
 
 ### Why Python?
-Python is ranked first in the “most well-known and used programming language” [1], compared to other alternatives (C++ and Javascript). This will not only allow me to have greater access to resources but most importantly allow future developers to update the application, future-proofing it. As the developer, I am most knowledgeable in Python, ensuring that the client can receive the application before the deadline. Considering the benefits to the client, it's safe to say that Python is the most suitable programming language. 
-
+Compared to other alternatives (Ruby and Swift) Python is “developing a reputation as a secure language”[1] which will prevent potential malicious attacks on the client. Languages like Swift only work on the Apple ecosystem and are not cross-platform, however, Python is “cross-platform” [2] which will make the application accessible from any operating system, making it versatile and convenient for the client. Alternatives such as Ruby tends to “have a slower runtime” compared to Python, meaning that Python can run and compile faster than Ruby, which will ensure the client will have a smoother, faster experience with the app. Ranked first in the “most well-known and used programming language” [3], this will allow the client to have greater support from other developers to update the application in the future as well. 
 
 ### Why KivyMD?
-Alternatives such as Libavg or PyQT do exist, however, KivyMD is compatible with all 3 operating systems (including mobile devices) [2] allowing the client to access the application. Additionally, KivyMD’s goal, “to approximate Google's Material Design spec” [3] also greatly relates to the client's experience as the GUI is what the client sees. KivyMD is also the library I am the most familiar with and will help me ensure delivery to the client promptly. For these reasons, I have concluded that KivyMD is the most appropriate for my project.
+Alternatives such as Libavg or PyQT do exist, however, KivyMD is multiplatform meaning that it can be used on a computer and mobile device [4] allowing the client to access the application through their laptops or phones, making the application versatile. Additionally, KivyMD’s goal, “to approximate Google's Material Design spec” [5] also greatly relates to the client's experience as the GUI is what the client sees. For these reasons, I have concluded that KivyMD is the most appropriate for my project.
 
 ### Why SQLite?
-Compared to other databases such as Improvado or RDBMS, SQLite is cross-compatible with several operating systems [4]. This is beneficial to the client as the compatibility will ensure the client can access it through any platform and also can ensure futureproofing of the application as developers can modify the database if necessary. As the developer, I am the most familiar with this database which will allow me to ensure that the client's deadline is met. With this flexibility and superiority over other alternatives, SQLite will be used for this project.
+Compared to other databases such as Improvado, SQLite is cross-compatible with a number of operating systems [6]. This is beneficial to the client as the compatibility will ensure the client can access it through any platform (mobile and desktop), making it convenient for them. Moreover, “SQLite Is Serverless”[7] means that data is stored locally, increasing the read-write speed and security for the client. This also means the client does not have to pay extra money for a dedicated server to store data, making the database completely free. 
 
 ### Success Criterias:
 1. The application must have a secure registration/login system where the user can insert their email, username and password and all be stored locally.
@@ -33,15 +32,13 @@ Compared to other databases such as Improvado or RDBMS, SQLite is cross-compatib
 Figure 1: Client approval of all success criterias
 ## Works Cited
 
-1. "The 10 Most Popular Programming Languages to Learn in 2021." Northeastern University Graduate Programs, 14 May 2021, www.northeastern.edu/graduate/blog/most-popular-programming-languages/. Accessed 28 Aug. 2022.
-
-2. ResellerClub. "The 6 Best Python GUI Frameworks for Developers." Medium, 18 Oct. 2019, medium.com/teamresellerclub/the-6-best-python-GUI-frameworks-for-developers-7a3f1a41ac73. Accessed 28 Aug. 2022.
-
-3. "Kivymd/KivyMD: KivyMD is a Collection of Material Design Compliant Widgets for Use with Kivy, a Framework for Cross-platform, Touch-enabled Graphical Applications. Https://youtube.com/c/KivyMD Https://twitter.com/KivyMD Https://habr.com/ru/users/kivymd Https://stackoverflow.com/tags/kivymd." GitHub, github.com/kivymd/KivyMD. Accessed 28 Aug. 2022.
-
-4. "SQLite Home Page." SQLite, www.sqlite.org/index.html. Accessed 28 Mar. 2022.
-
-5. "How To Use the Sqlite3 Module in Python 3." DigitalOcean – The Developer Cloud, 2 June 2020, www.digitalocean.com/community/tutorials/how-to-use-the-sqlite3-module-in-python-3. Accessed 28 Aug. 2022.
+1. "How to Write Safe and Secure Python Code, Detect CWE and Avoid Vulnerabilities in Production Code." Codiga: Static Code Analysis in Real-Time, www.codiga.io/blog/secure-python-code-detect-cwe/.
+2. Azorin, Paul. "Getting Started with Python." Medium, 3 Aug. 2020, medium.com/@guestposts_92864/getting-started-with-python-973270db33af.
+3. "The 10 Most Popular Programming Languages to Learn in 2021." Northeastern University Graduate Programs, 14 May 2021, www.northeastern.edu/graduate/blog/most-popular-programming-languages/. Accessed 28 Aug. 2022.
+4. ResellerClub. "The 6 Best Python GUI Frameworks for Developers." Medium, 18 Oct. 2019, medium.com/teamresellerclub/the-6-best-python-GUI-frameworks-for-developers-7a3f1a41ac73. Accessed 28 Aug. 2022.
+5. "Kivymd/KivyMD: KivyMD is a Collection of Material Design Compliant Widgets for Use with Kivy, a Framework for Cross-platform, Touch-enabled Graphical Applications. Https://youtube.com/c/KivyMD Https://twitter.com/KivyMD Https://habr.com/ru/users/kivymd Https://stackoverflow.com/tags/kivymd." GitHub, github.com/kivymd/KivyMD. Accessed 28 Aug. 2022.
+6. "SQLite Home Page." SQLite, www.sqlite.org/index.html. Accessed 28 Mar. 2022.
+7. "SQLite Is Serverless." SQLite, 2 Apr. 2018, www.sqlite.org/serverless.html.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
