@@ -47,7 +47,7 @@ Figure 1: Client approval of all success criterias
 # Criteria B: Design
 ## System Diagram
 
-![](system_dia.png) 
+![](sys_diagram.jpg)
 
 ### Fig2. System Diagram of the application
 
