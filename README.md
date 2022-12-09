@@ -376,7 +376,7 @@ Similar to the top function, I coded this to verify the password inputted matche
 
 [2] "KivyMD 1.2.0.dev0 Documentation." KivyMD 1.1.1 Documentation, 2022, kivymd.readthedocs.io/en/latest/. Accessed 2 Nov. 2022.
     
-# Criteria D
+# Criteria D: Functionality 
     
 ## https://youtu.be/whZxIXZ4nvc
     
