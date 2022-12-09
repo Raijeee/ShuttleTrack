@@ -1,6 +1,6 @@
 # Unit IA: Client Project (Club Attendance Application)
 
-# Criteria A: Planning (480 words) 
+# Criteria A: Planning
 ## Problem definition
 The badminton club leaders have to mark attendance and keep track of points every time they practice badminton. They use google sheets in a gym with limited wifi, making it impossible to access. The badminton club leaders have approached me to create an application that can record the attendance of the club and keep track of the points of a game. They want an application that has a GUI that has accessible buttons and text boxes with individual names to record attendance and keep track of points. This must work even without access to the internet. 
 
