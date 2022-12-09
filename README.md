@@ -215,7 +215,7 @@ Test plans are used to show if the application works and meets the client's need
 ### Tools used
 - Installing Kivy and KivyMD (GUI library)
 
-## Registration / Login function
+## Login function
 
 
 ### Database
@@ -442,9 +442,8 @@ class HistoryScreen(MDScreen):
 
 This python code communicates with the database to retrieve data and display the information extracted through the GUI. This aligns with the client's success criteria as the application will be able to display information from the database with a more user-friendly GUI. I have used the KivyMD library to create a table to show the attendance data through the “data_tables” function and used inheritance to communicate with the database through the “db” function. Although I faced some challenges in communicating and retrieving the data I want from the database, I was able to solve this by referring to the SQL documentation [1] and solving the client's needs by providing a GUI that shows previously entered data. 
 
-## Exporting Datatable as a PNG
 
-# Attendance Screen
+## Registration Screen
 
 ```.py
 class RegisterScreen(MDScreen): #This function will register the user
