@@ -196,10 +196,23 @@ Test plans are used to show if the application works and meets the client's need
 | 23      | Create a test plan                                                  | A clear test plan to ensure the functionality of the application              | 1 day         | November 2nd           | B         |
 | 24      | Document Techniques used                                            | A clear list of techniques used in this development phase                     | 1 day         | November 2nd           | C         |
 | 25      | Document tools used                                                 | A clear list of tools used in this development phase                          | 1 day         | November 3rd           | C         |
-| 26      | Write up criteria C                                                            | A good amount of criteria C done, with challenges faced and how I overcame it | 1 day         | November 4th           | C         |
-|         |                                                                     |                                                                               |               |                        |           |
-|         |                                                                     |                                                                               |               |                        |           |
-
+| 26      | Write up half of criteria C                                         | A good amount of criteria C done, with challenges faced and how I overcame it | 1 day         | November 4th           | C         |
+| 27      | Improve and fix justification of Python                             | Read feedback and adjust Python Justification in Criteria A                   | 1 day         | November 9th           | A         |
+| 28      | Improve and fix justification of KivyMD                             | Read feedback and adjust KivyMD Justification in Criteria A                   | 1 day         | November 10th          | A         |
+| 29      | Improve and fix justification of SQLite                             | Read feedback and adjust SQLite Justification in Criteria A                   | 1 day         | November 11th          | A         |
+| 30      | Fix and add detail in system diagram                                | Read feedback and add detail in system diagram on Criteria B                  | 1 day         | November 12th          | B         |
+| 31      | Fix and adjust ER Diagram                                           | Read feedback and fix ER Diagrams on Criteria B                               | 1 day         | November 13th          | B         |
+| 32      | Fix and redo Entity Relationship Diagram                            | Read feedback and redo ER Diagram on Criteria B                               | 2 days        | November 15th          | B         |
+| 33      | Fix and adjust normalized table                                     | Read feedback and redo normalized table on Criteria B                         | 1 day         | November 16th          | B         |
+| 34      | Fix and improve test plan                                           | Read feedback and add detail in test plan on Criteria B                       | 1 day         | November 17th          | B         |
+| 35      | Code and create an attendance insert screen / database              | A working menu screen with python and kivyMD connected to SQL database        | 3 days        | November 20th          | C         |
+| 36      | Code and create an attendance history screen                        | A working history screen with python and kivyMD connected to SQL database     | 2 days        | November 22nd          | C         |
+| 37      | Code and create a referee point counter screen                      | A working point counter screen with python and KivyMD connected               | 2 days        | November 24th          | C         |
+| 38      | Code and create a referee shuttle drop counter screen               | A working shuttle drop counter screen with python and KivyMD connected        | 2 days        | November 26th          | C         |
+| 39      | Extract parts of code and decide on what to explain for Criteria C  | A list of code to use in criteria C                                           | 1 day         | November 27th          | C         |
+| 40      | Explain and expand on selected code for criteria C (documentation)  | Documentation of all selected list of code                                    | 10 days       | December 6th           | C         |
+| 41      | Record functionality test                                           | A video recording of functionality test                                       | 2 days        | December 8th           | C         |
+| 42      | Reread and check for any errors and edit.                           | Reread at least twice and corrected any minor errors that may exist           | 1 day         | December 9th           | A,B,C     |
 # Criteria C: Development
 
 ### Techniques Used
