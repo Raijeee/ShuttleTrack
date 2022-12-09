@@ -108,9 +108,9 @@ Figure 5 is a function that is active when the user clicks the referee mode. The
 Figure 6 shows the entity-relationship diagram which shows the interaction between entity sets, stored in the database table with their respective attribute. In this diagram, yellow rectangles represent the entity that contains attributes. Red circles are the primary key, which is used to uniquely identify each record in the database. In this case, there are two entities, one being the user and the other being attendance. These two all intertwine with one another as each user has their attendance status. Each user also has their own attributes such as username, password and email with attendance also having unique attributes such as the number of presences, absence and the percentage of presence. Having a simple two-entity relationship is the best in this case as it is the most efficient and at the same time meets the client's requirements. 
 
 ## UML Diagram
-![](UML.png)
+![](UMLdiagramf.png)
 ### Fig 7. UML Diagram for classes in the application
-Figure 7 shows a UML diagram that illustrates the relationship between all the classes that exist within the application. The lines represent how each classes interact with eachother. The boxes are split into three parts: class name, attributes and methods. The arrows represent ways in which different classes interact with each other, mainly being fetch and store functions towards the database class. 
+Figure 7 shows a UML diagram that illustrates the relationship between all the classes that exist within the application.  The boxes are split into three parts: class name, attributes and methods. The arrows show relationship between classes and the inheritance throughout the different classes.
 
 ## Normalized Table
 ### Normalized tables are used to process and organize data in a database table. This includes creating tables and establishing relationships by eliminating redundancy and inconsistent dependency.
