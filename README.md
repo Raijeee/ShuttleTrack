@@ -379,4 +379,4 @@ Similar to the top function, I coded this to verify the password inputted matche
     
 ## Appendixes
     
-1 ![](clientapproval.png)
+1. ![](clientapproval.png)
