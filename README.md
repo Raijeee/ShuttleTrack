@@ -230,15 +230,13 @@ To create the backbone of this function, I initially had to generate a database 
                 username VARCHAR(200) not null unique,
                 email VARCHAR(255) not null unique,
                 password VARCHAR(256) not null,
-                first_name VARCHAR(200) not null,
-                last_name VARCHAR(200) not null,
-                role VARCHAR(200) not null,
+                roles VARCHAR(200) not null,
                 );
                 """)
         self.connection.commit()
 ```
 ### Fig. 8: Database creation code
-Figure 8 shows that each column corresponds to its respective data type and its requirements. Some elements are created automatically, such as “id” but other fields such as username, email and password require the user to input themselves and will act as unique identifiers for attendance taking. I first had trouble connecting the database with the python file but by following the SQLite documentation [1] I was able to eventually connect the files. 
+Figure 8 shows that each column corresponds to its respective data type and its requirements. Some elements are created automatically, such as “id” but other fields such as username, email and password require the user to input themselves and will act as unique identifiers for attendance taking. I first had trouble connecting the database with the python file but by following the SQLite documentation [1] I was able to eventually connect the files. I have decided to have these variables in the database as it will satisfy the clients requirements of having a structured, clear naming system of the members and leaders with roles. 
 
 ### Graphical User Interface
 
@@ -318,7 +316,7 @@ For users to access this function, I will then have to create the frontend or th
             root.parent.current = "RegisterScreen"
 ```
 ### Fig. 9: Kivy Code for GUI
-This figure shows the general layout used to create a graphical interface for the user. It uses the <ScreenManager> to create a <LoginScreen> and through the use of the KivyMD library, I was able to use provided resources such as MDCard and MDLabel to create editable boxes and text fields to gain input from the user interface. Connecting the user-inputted text to a readable string on python proved to be a challenge although quick research and help from a youtube tutorial [2] helped me tremendously. 
+This figure shows the general layout used to create a graphical interface for the user. It uses the <ScreenManager> to create a <LoginScreen> and through the use of the KivyMD library, I was able to use provided resources such as MDCard and MDLabel to create editable boxes and text fields to gain input from the user interface. Connecting the user-inputted text to a readable string on python proved to be a challenge although quick research and help from a youtube tutorial [2] helped me tremendously. The use of big buttons such as the MDRaisedButtons were also used to help the clients navigate through the app, even through a mobile interface. 
 
 ### Encryption 
 
@@ -352,7 +350,7 @@ For the login system to function, I will have to be able to code a bridge betwee
         result = self.cursor.execute(f"select * from USERS where username='{username}';")
         return result.fetchone()
 ```
-### Fig. 12: Code that query’s users in the database
+### Fig. 12: Code that queries users in the database
 I first created a function where the inputted string on the GUI connects with the python code and compares it with the existing database in order to give out a boolean value. This uses the sqlite3 tools in order to query the existence of the inputted users and the database will be able to give out a boolean statement for the python code to utilize. 
 
 ```.py
@@ -362,13 +360,145 @@ I first created a function where the inputted string on the GUI connects with th
         result = self.cursor.execute(f"select * from USERS where password='{password}';")
         return result.fetchone()
 ```
-### Fig. 13: Code that query's passwords in the database
+### Fig. 13: Code that queries passwords in the database
 ```.py
 def verify_password(password, hashed):
     return pwd_context.verify(password, hashed)
 ```
 ### Fig. 14: Code that decrypts the hashed password in the database
 Similar to the top function, I coded this to verify the password inputted matches the decrypted password in the database. To do this, I had to decrypt the password that was in the database, which proved to be a challenge. However, through numerous trials and errors and consulting the SQL documentation [1] I was able to decrypt the password. 
+
+
+## Inserting / Retrieving Attendance Data 
+
+## Inserting Data into Database via GUI
+
+```.py
+class InsertScreen(MDScreen):
+safe=[]
+def show_date_picker(self):
+   date_dialog = MDDatePicker(year=2022, month=1, day=1)
+   date_dialog.open()
+# This is a class attribute
+data_tables = None
+# This will get data from the database
+def on_pre_enter(self, *args):
+   db=my_database_handler("attendance.db")
+   query=db.query_name()
+   db.close()
+   self.data_tables = MDDataTable(
+       use_pagination = True,
+       check=True,
+       size_hint = (0.7,0.6),
+       pos_hint = {"center_x": 0.5, "top": 0.78},
+       column_data = [("Present?", 200)],
+       row_data = query
+   )
+   self.add_widget(self.data_tables)
+   self.data_tables.bind(on_check_press=self.checked)
+
+def checked(self, instance_table, current_row):
+   self.safe.append(current_row[0])
+   print(self.safe)
+def confirm(self):
+   db = my_database_handler("attendance.db")
+   namelist=db.query_name()
+   for i in range (len(namelist)):
+       if namelist[i][0] in self.safe:
+           db.present_increase(username=namelist[i][0])
+       else:
+           db.absence_increase(username=namelist[i][0])
+   self.parent.current = "MainScreen"
+   self.safe=[]
+```
+Figure 15: Class that inserts attendance data into the database via the GUI
+
+This code incorporates variables from the KivyMD file and the console in the SQLite database. I have employed these techniques in order to connect the GUI with the backend of the program, which will allow me to communicate with the database through the inputs of the user via the GUI. I have used inheritance using OOP to communicate with the database through the use of the “db” function and created a table using the built-in KivyMD libraries (data_tables). I have also added a check box to match the needs of the client so the leaders can check off the members who are present. Through communicating with the database, the names with a checkbox will increase their “presence” number by 1 and names who arent will increase their “absent” number by 1. In the process of making this, I found using checkboxes as a boolean output to be a challenge as KivyMD instantly sends out an output rather than saving it. To fix this, I had to come up with a dynamic way of receiving boolean values, which led me to think of the “present_increase” and “present_decrease” functions. These all align with the client's needs as it will record who is present and who is not through checkboxes which are easy to use. 
+
+## Displaying Attendance Data
+
+```.py
+class HistoryScreen(MDScreen):
+   # This is a class attribute
+   data_tables = None
+   # This will get data from the database
+   def on_pre_enter(self, *args):
+       db=my_database_handler("Attendance.db")
+       query = db.query_attendance()
+       db.close()
+
+       self.data_tables = MDDataTable(
+           use_pagination = True,
+           size_hint = (0.7,0.6),
+           pos_hint = {"center_x": 0.5, "top": 0.75},
+           column_data = [("Last Date", 55), ("Name", 55), ("Present", 55), ("Absent", 55)],
+           row_data = query
+       )
+       self.add_widget(self.data_tables)
+
+```
+
+### Figure 16: Class that displays attendance data from the database
+
+This python code communicates with the database to retrieve data and display the information extracted through the GUI. This aligns with the client's success criteria as the application will be able to display information from the database with a more user-friendly GUI. I have used the KivyMD library to create a table to show the attendance data through the “data_tables” function and used inheritance to communicate with the database through the “db” function. Although I faced some challenges in communicating and retrieving the data I want from the database, I was able to solve this by referring to the SQL documentation [1] and solving the client's needs by providing a GUI that shows previously entered data. 
+
+## Exporting Datatable as a PNG
+
+# Attendance Screen
+
+```.py
+class RegisterScreen(MDScreen): #This function will register the user
+   def dropdown(self): #This function will create the dropdown menu
+       self.menu_list=[
+           {
+               "viewclass": "OneLineListItem",
+               "text": "Student",
+               "on_release": lambda x="Student": self.student(), #This will set the role to student
+           },
+           {
+               "viewclass": "OneLineListItem",
+               "text": "Leader",
+               "on_release": lambda x=f"Leader": self.leader(), #This will set the role to Leader
+           },
+           {
+               "viewclass": "OneLineListItem",
+               "text": "Admin",
+               "on_release": lambda x=f"Admin": self.admin(), #This will set the role to admin
+           }
+       ]
+       self.menu = MDDropdownMenu(
+           caller=self.ids.menu,
+           items=self.menu_list,
+           width_mult=2,
+       )
+       self.menu.open()
+
+   def student(self):
+       self.ids.menu.text = "Student" #This will set the text to student
+
+   def leader(self):
+       self.ids.menu.text = "Leader" #This will set the text to leader
+
+   def admin(self):
+       self.ids.menu.text = "Admin" #This will set the text to admin
+
+   def register(self): #This function will register the user
+       email_entered = self.ids.email.text
+       username_entered=self.ids.username.text
+       password_entered=self.ids.password.text
+       role_entered=self.ids.menu.text
+       db=my_database_handler("attendance.db")
+       db.create_new_user(username=username_entered,email=email_entered,password=password_entered,roles=role_entered) #This will create a new user by communitcating with the database
+       db.close()
+       self.parent.current="LoginScreen"
+       self.ids.email.text = ""
+       self.ids.username.text = ""
+       self.ids.password.text = ""
+```
+Figure 17: Class that displays the Registration Screen
+
+This is the back end of the registration screen where the user can register their name, password, email and role. I used the lambda function (which is a nameless, callable function) to create a drop-down menu for selecting the individual roles in my application. The class also communicates with the SQL database through inheritance. KivyMD is also used as input as this is what the client sees. A problem I have faced is when creating the drop-down menu, I was not able to identify the inputs of the clients as KivyMD only provides instantaneous responses. Therefore, I have consulted the python documentation to create a lambda function. Through this, I was able to create a drop-down function and allow the user to select their roles, which is included in the success criteria. 
+
 
 ## Source Cited:
     
