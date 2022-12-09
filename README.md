@@ -28,8 +28,8 @@ Compared to other databases such as Improvado, SQLite is cross-compatible with a
 
 
 ## Client Approval
-![](clientapproval.png)
-Figure 1: Client approval of all success criterias
+The client has approved all of the success criterias. This can be seen in Appendix 1. 
+
 ## Works Cited
 
 1. "How to Write Safe and Secure Python Code, Detect CWE and Avoid Vulnerabilities in Production Code." Codiga: Static Code Analysis in Real-Time, www.codiga.io/blog/secure-python-code-detect-cwe/.
@@ -49,17 +49,17 @@ Figure 1: Client approval of all success criterias
 
 ![](sys_diagram.jpg)
 
-### Fig2. System Diagram of the application
+### Fig1. System Diagram of the application
 
-Figure 2 shows how the application interacts with each other. The input will be done with a keyboard (input of numbers) and the output will be shown on the screen. The application will be inside the macOS operating system (ver. Monterey 12.5.1), which will be in the computer itself. The app will then be operated via Python version 3.x and executed via the file name, Attendance.py. The Attendnace.py file is then connected with a GUI construction file, Attendance.kv. Furthermore, the python file is then connected with a SQL database (version 3.39.4) called Attendance.db.
+Figure 1 shows how the application interacts with each other. The input will be done with a keyboard (input of numbers) and the output will be shown on the screen. The application will be inside the macOS operating system (ver. Monterey 12.5.1), which will be in the computer itself. The app will then be operated via Python version 3.x and executed via the file name, Attendance.py. The Attendnace.py file is then connected with a GUI construction file, Attendance.kv. Furthermore, the python file is then connected with a SQL database (version 3.39.4) called Attendance.db.
 
 ## Wireframe Diagram
 
 ![](wireframe1.jpg)
 
-### Fig3. Wireframe Diagram of the GUI
+### Fig2. Wireframe Diagram of the GUI
 
-Figure 3 shows the Wireframe Diagram of the graphic user interface of the application. It shows the functionalities of every button planned out to be used in the application and shows all 5 screens of the application.
+Figure 2 shows the Wireframe Diagram of the graphic user interface of the application. It shows the functionalities of every button planned out to be used in the application and shows all 5 screens of the application.
 
 #### Login Screen
 This will be the screen the user will be presented with when first opening the application. The user will have to enter their username and password and click the login screen to go to the main screen or click the register button if not registered. This is accessible to all roles. 
@@ -90,27 +90,27 @@ This screen will be able to change any user's role from "STUDENTS" to "LEADER" o
 Flowcharts are used to bridge the developer with the user by visualizing complex code for the client to understand the backend of the application. This will help me as the developer to detect any potential bottlenecks that may exist and also help the client as they will be able to follow step-by-step visualized instructions to solve any doubts. 
 
 ![](saveme.png)
-### Fig4. Authentication system flow diagram
-Figure 4 shows the login function when a user clicks the "login" button in the GUI it will call this function. The username and password variables are defined in their respective text fields in the GUI. The database (attendance.db) is also defined as db. The user_id produces a true or false which relates to the if statement where when false, displays a message called "Error: User not found" and when true moves on to the next if statement which verifies the password. The next if statement will compare the inputted passwords with the respective username inputted and if true changes the screen to the "MainScreen" and when false displays a message that says "Error: Wrong Password". 
+### Fig3. Authentication system flow diagram
+Figure 3 shows the login function when a user clicks the "login" button in the GUI it will call this function. The username and password variables are defined in their respective text fields in the GUI. The database (attendance.db) is also defined as db. The user_id produces a true or false which relates to the if statement where when false, displays a message called "Error: User not found" and when true moves on to the next if statement which verifies the password. The next if statement will compare the inputted passwords with the respective username inputted and if true changes the screen to the "MainScreen" and when false displays a message that says "Error: Wrong Password". 
 
 ![](Flow3.drawio.png)
-### Fig5. Flow diagram of fetching data from the database
-Figure 5 shows a function where the program fetches data from the table database "Attendance.db" The fetched data will go through an if statement, evaluating whether the data is valid, specifically if all fields are met. If so, the data will be appended to the database and if not, the code will output nothing. 
+### Fig4. Flow diagram of fetching data from the database
+Figure 4 shows a function where the program fetches data from the table database "Attendance.db" The fetched data will go through an if statement, evaluating whether the data is valid, specifically if all fields are met. If so, the data will be appended to the database and if not, the code will output nothing. 
 
 ![](flowd3.png)
-### Fig6. Referee mode flow diagram
-Figure 6 is a function that is active when the user clicks the referee mode. The left point and right point variables are set to 0 at first to reset the counter if past games were going on. The variable playing is set to True for the while loop to loop itself while the games are still in progress. The first if statement is when the left box is clicked, the counter of the left point will increase by one. The same goes for the next if statement just when the right one is clicked.  After the if statements, all variables set to each side will be displayed on the GUI by changing the label on kivyMD.
+### Fig5. Referee mode flow diagram
+Figure 5 is a function that is active when the user clicks the referee mode. The left point and right point variables are set to 0 at first to reset the counter if past games were going on. The variable playing is set to True for the while loop to loop itself while the games are still in progress. The first if statement is when the left box is clicked, the counter of the left point will increase by one. The same goes for the next if statement just when the right one is clicked.  After the if statements, all variables set to each side will be displayed on the GUI by changing the label on kivyMD.
 
 
 ## ER Diagram
 ![](er_diagram.jpg)
-### Fig7. ER (Entity Relationship) Diagram
-Figure 7 shows the entity-relationship diagram which shows the interaction between entity sets, stored in the database table with their respective attribute. In this diagram, yellow rectangles represent the entity that contains attributes. Red circles are the primary key, which is used to uniquely identify each record in the database. In this case, there are two entities, one being the user and the other being attendance. These two all intertwine with one another as each user has their attendance status. Each user also has their own attributes such as username, password and email with attendance also having unique attributes such as the number of presences, absence and the percentage of presence. Having a simple two-entity relationship is the best in this case as it is the most efficient and at the same time meets the client's requirements. 
+### Fig6. ER (Entity Relationship) Diagram
+Figure 6 shows the entity-relationship diagram which shows the interaction between entity sets, stored in the database table with their respective attribute. In this diagram, yellow rectangles represent the entity that contains attributes. Red circles are the primary key, which is used to uniquely identify each record in the database. In this case, there are two entities, one being the user and the other being attendance. These two all intertwine with one another as each user has their attendance status. Each user also has their own attributes such as username, password and email with attendance also having unique attributes such as the number of presences, absence and the percentage of presence. Having a simple two-entity relationship is the best in this case as it is the most efficient and at the same time meets the client's requirements. 
 
 ## UML Diagram
 ![](UML.png)
-### Fig 8. UML Diagram for classes in the application
-Figure 8 shows a UML diagram that illustrates the relationship between all the classes that exist within the application. The lines represent how each classes interact with eachother. The boxes are split into three parts: class name, attributes and methods. The arrows represent ways in which different classes interact with each other, mainly being fetch and store functions towards the database class. 
+### Fig 7. UML Diagram for classes in the application
+Figure 7 shows a UML diagram that illustrates the relationship between all the classes that exist within the application. The lines represent how each classes interact with eachother. The boxes are split into three parts: class name, attributes and methods. The arrows represent ways in which different classes interact with each other, mainly being fetch and store functions towards the database class. 
 
 ## Normalized Table
 ### Normalized tables are used to process and organize data in a database table. This includes creating tables and establishing relationships by eliminating redundancy and inconsistent dependency.
@@ -237,8 +237,8 @@ To create the backbone of this function, I initially had to generate a database 
                 """)
         self.connection.commit()
 ```
-### Fig. 9: Database creation code
-Figure 9 shows that each column corresponds to its respective data type and its requirements. Some elements are created automatically, such as “id” but other fields such as username, email and password require the user to input themselves and will act as unique identifiers for attendance taking. I first had trouble connecting the database with the python file but by following the SQLite documentation [1] I was able to eventually connect the files. 
+### Fig. 8: Database creation code
+Figure 8 shows that each column corresponds to its respective data type and its requirements. Some elements are created automatically, such as “id” but other fields such as username, email and password require the user to input themselves and will act as unique identifiers for attendance taking. I first had trouble connecting the database with the python file but by following the SQLite documentation [1] I was able to eventually connect the files. 
 
 ### Graphical User Interface
 
@@ -317,7 +317,7 @@ For users to access this function, I will then have to create the frontend or th
         on_release:
             root.parent.current = "RegisterScreen"
 ```
-### Fig. 10: Kivy Code for GUI
+### Fig. 9: Kivy Code for GUI
 This figure shows the general layout used to create a graphical interface for the user. It uses the <ScreenManager> to create a <LoginScreen> and through the use of the KivyMD library, I was able to use provided resources such as MDCard and MDLabel to create editable boxes and text fields to gain input from the user interface. Connecting the user-inputted text to a readable string on python proved to be a challenge although quick research and help from a youtube tutorial [2] helped me tremendously. 
 
 ### Encryption 
@@ -335,9 +335,9 @@ pwd_context = CryptContext(
 def encrypt_password(password):
     return pwd_context.hash(password)
 ```
-### Fig. 11: Hashing system code
+### Fig. 10: Hashing system code
 ![](C1.png)
-### Fig. 12: Normalized table of the SQL database
+### Fig. 11: Normalized table of the SQL database
 
 Using the passlib encryption library, I will be able to hash the passwords entered by the user. The figure shows the code and what I as the developer sees in the SQL database, meaning that they won’t be able to see the password of the user. 
 
@@ -352,7 +352,7 @@ For the login system to function, I will have to be able to code a bridge betwee
         result = self.cursor.execute(f"select * from USERS where username='{username}';")
         return result.fetchone()
 ```
-### Fig. 13: Code that query’s users in the database
+### Fig. 12: Code that query’s users in the database
 I first created a function where the inputted string on the GUI connects with the python code and compares it with the existing database in order to give out a boolean value. This uses the sqlite3 tools in order to query the existence of the inputted users and the database will be able to give out a boolean statement for the python code to utilize. 
 
 ```.py
@@ -362,12 +362,12 @@ I first created a function where the inputted string on the GUI connects with th
         result = self.cursor.execute(f"select * from USERS where password='{password}';")
         return result.fetchone()
 ```
-### Fig. 14: Code that query's passwords in the database
+### Fig. 13: Code that query's passwords in the database
 ```.py
 def verify_password(password, hashed):
     return pwd_context.verify(password, hashed)
 ```
-### Fig. 15: Code that decrypts the hashed password in the database
+### Fig. 14: Code that decrypts the hashed password in the database
 Similar to the top function, I coded this to verify the password inputted matches the decrypted password in the database. To do this, I had to decrypt the password that was in the database, which proved to be a challenge. However, through numerous trials and errors and consulting the SQL documentation [1] I was able to decrypt the password. 
 
 ## Source Cited:
@@ -375,3 +375,7 @@ Similar to the top function, I coded this to verify the password inputted matche
 [1] "SQLite Documentation." SQLite, Hwaci - Applied Software Research, 16 Jan. 2021, www.sqlite.org/docs.html. Accessed 2 Nov. 2022.
 
 [2] "KivyMD 1.2.0.dev0 Documentation." KivyMD 1.1.1 Documentation, 2022, kivymd.readthedocs.io/en/latest/. Accessed 2 Nov. 2022.
+    
+    
+## Appendixes
+    1. ![](clientapproval.png)
