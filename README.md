@@ -2,7 +2,7 @@
 
 # Criteria A: Planning
 ## Problem definition
-The badminton club leaders have to mark attendance and keep track of points. They use Google sheets in a gym with limited wifi, making it impossible to access. The badminton club leaders have approached me to create an application that can be accessed without the internet. It must record the attendance of the club that can be accessed in later days and keep track of the points of a game. They want a GUI that has accessible buttons with individual names to record attendance and keep track of points. They also want a login system to differentiate who can add attendance logs. The client has approved all of the success criteria (### Appendix 1).
+The badminton club leaders have to mark attendance and keep track of points. They use Google sheets in a gym with limited wifi, making it impossible to access. The badminton club leaders have approached me to create an application that can be accessed without the internet. It must record the attendance of the club that can be accessed in later days and keep track of the points of a game. They want a GUI that has accessible buttons with individual names to record attendance and keep track of points. They also want a login system to differentiate who can add attendance logs. The client has approved all of the success criteria (Appendix 1).
 
 ## Proposed Solution:
 
