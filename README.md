@@ -522,6 +522,20 @@ This is the back end of the registration screen where the user can register thei
     
 ## https://youtu.be/whZxIXZ4nvc
     
+# Criteria E: Evaluation
+    
+### Through the final interaction, I had with my client (seen in Appendix 2), I was able to achieve these success criteria shown in this table: 
+
+| Success  Criteria | Successful? | Details                                                                                                                                                                                                                                     |
+|-------------------|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         1         | YES         | The client was able to register their email, name, username, and password, with all of them locally stored into a database, encrypted. The login system also works with only the correct credentials being able to access the application.  |
+|         2         | YES         | The client was able to add attendance data of individual students via the GUI through accessible buttons and checkboxes. All the data was also successfully stored into the local database.                                                 |
+|         3         | YES         | The application was able to handle different roles (Admin, Leader and Students) and the client was able to differentiate between the roles when registering a new user.                                                                     |
+|         4         | YES         | The client was able to keep track of points in a game through the GUI by clicking on the courts. The respective courts increased in count whenever the client clicked on the court and reset to 0 when clicked on the "reset" button.       |
+|         5         | YES         | The application was able to export attendance data as a PNG when the client clicked the "Export to PNG" button on the history screen.                                                                                                       |
+|         6         | YES         | Within the "History" screen, the client is able to see the absences/presence per user with its recorded date. This screen is also only accessible to roles of "admin" and "leaders".                                                        |
+    
+    
     
 ## Appendixes
     
