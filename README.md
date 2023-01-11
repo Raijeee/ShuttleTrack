@@ -103,7 +103,7 @@ Figure 5 is a function that is active when the user clicks the referee mode. The
 
 
 ## ER Diagram
-![](er_diagram.jpg)
+![](fixed_ER_dia.png)
 ### Fig6. ER (Entity Relationship) Diagram
 Figure 6 shows the entity-relationship diagram which shows the interaction between entity sets, stored in the database table with their respective attribute. In this diagram, yellow rectangles represent the entity that contains attributes. Red circles are the primary key, which is used to uniquely identify each record in the database. In this case, there are two entities, one being the user and the other being attendance. These two all intertwine with one another as each user has their attendance status. Each user also has their own attributes such as username, password and email with attendance also having unique attributes such as the number of presences, absence and the percentage of presence. Having a simple two-entity relationship is the best in this case as it is the most efficient and at the same time meets the client's requirements. 
 
@@ -124,12 +124,12 @@ Figure 7 shows a UML diagram that illustrates the relationship between all the c
 | 4                 | user123  | $pbkdf2-sha256$3000$GwNg7H1vLcU4J8R4zxkDYA$vohr75tXcNl4OMlpngH6gjq6IGx8Pua7O3TtTMqhUsE | user123_test@hotmail.com | User       | Name      | Member |
 ### This is the normalized table of the user database. 
 
-| id (primary key) | User_id | Last Date   | Present | Absent | Present Percentage (%) |
-|------------------|---------|-------------|---------|--------|------------------------|
-| 1                | 1       | oct.10.2022 | 6       | 1      | 86                     |
-| 2                | 5       | oct.10.2022 | 5       | 2      | 71                     |
-| 3                | 2       | nov.1.2022  | 7       | 0      | 100                    |
-| 4                | 9       | nov.4.2022  | 4       | 3      | 57                     |
+| id (primary key) | User_id | Last Date   | Present | Absent |
+|------------------|---------|-------------|---------|--------|
+| 1                | 1       | oct.10.2022 | 6       | 1      |
+| 2                | 5       | oct.10.2022 | 5       | 2      | 
+| 3                | 2       | nov.1.2022  | 7       | 0      |
+| 4                | 9       | nov.4.2022  | 4       | 3      |
 ### This is the normalized table of the attendance data. 
 
 # Test Plan
