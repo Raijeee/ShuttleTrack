@@ -259,7 +259,6 @@ For users to access this function, I will then have to create the frontend or th
 <LoginScreen>
     FitImage:
         source: "background_img.jpg"
-
     MDCard:
         border_radius: 20
         radius: [15]
@@ -268,13 +267,11 @@ For users to access this function, I will then have to create the frontend or th
         pos_hint: {"center_x": 0.5, "center_y": 0.5}
         orientation: "vertical"
         md_bg_color:[1,1,1, 0.4]
-
     MDLabel:
         text: "Login"
         font_style: 'H2'
         halign: 'center'
         pos_hint:{"center_x":0.5, "center_y":0.8}
-
     MDLabel:
         id: login_label
         text: "Please enter Username and Password"
@@ -282,7 +279,6 @@ For users to access this function, I will then have to create the frontend or th
         halign: 'center'
         size_hint: 0.4,0.07
         pos_hint:{"center_x":0.5, "center_y":0.65}
-
     MDLabel:
         id: login_label
         text: ""
@@ -291,7 +287,6 @@ For users to access this function, I will then have to create the frontend or th
         font_style: 'Caption'
         halign: 'center'
         pos_hint:{"center_x":0.5, "center_y":0.55}
-
     MDTextFieldRound:
         id: username
         pos_hint:{"center_x":0.5, "center_y":0.5}
@@ -305,7 +300,6 @@ For users to access this function, I will then have to create the frontend or th
         icon_left: 'key-variant'
         hint_text: 'Password'
         password: True
-
     MDRaisedButton:
         text: "Log in"
         pos_hint: {"center_x":0.5,"center_y":0.3}
