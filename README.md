@@ -1,4 +1,4 @@
-# Client Project: ShuttleTrack (Badminton Club Attendance/Referee App)
+# Client Project: ShuttleTrack (Badminton Club App)
 
 # Criteria A: Planning
 ## Problem definition
