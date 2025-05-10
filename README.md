@@ -1,4 +1,4 @@
-# Unit IA: Client Project (Club Attendance Application)
+# Client Project: ShuttleTrack (Badmiinton Club Attendance/Referee App)
 
 # Criteria A: Planning
 ## Problem definition
